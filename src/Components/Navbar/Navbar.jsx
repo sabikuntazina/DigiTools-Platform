@@ -12,16 +12,12 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 space-y-3 shadow">
+            <li className='text-lg flex items-center font-semibold'><a>Products</a></li>
+            <li className='text-lg flex items-center font-semibold'><a>Features</a></li>
+            <li className='text-lg flex items-center font-semibold'><a>Pricing</a></li>
+            <li className='text-lg flex items-center font-semibold'><a>Testimonials</a></li>
+            <li className='text-lg flex items-center font-semibold'><a>FAQ</a></li>
       </ul>
     </div>
     <h1 className="text-[#4F39F6] font-extrabold text-4xl">DigiTools</h1>

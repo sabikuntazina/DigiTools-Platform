@@ -9,3 +9,12 @@
 
 
 }
+
+.circle-icon {
+  height: 16px;
+  width: 16px;
+  background: radial-gradient(#9829f8, #ececec91, #9829f8, #ffffffa4, #9829f8);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
