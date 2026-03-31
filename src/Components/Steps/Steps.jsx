@@ -27,10 +27,10 @@ const steps = [
 
 const Steps = () => {
     return (
-    <div className='max-w-7xl mx-auto my-10'>
-         <div className='grid md:grid-cols-3 gap-4'>
+    <div className='max-w-7xl mx-auto my-10 '>
+         <div className='grid md:grid-cols-3 gap-4 place-items-center'>
           {
-            steps.map(step=><StepsCard step={step}></StepsCard>)
+            steps.map(step=><StepsCard key={step.id} step={step}></StepsCard>)
        }
      </div>
     </div>
