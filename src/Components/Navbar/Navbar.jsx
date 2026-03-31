@@ -4,7 +4,7 @@ import { CiShoppingCart } from 'react-icons/ci';
 const Navbar = () => {
     return (
  <div className=" bg-base-100 shadow-sm ">
-    <div className='navbar max-w-7xl mx-auto'>
+    <div className='navbar lg:max-w-7xl lg:mx-auto'>
           <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -20,7 +20,7 @@ const Navbar = () => {
             <li className='text-lg flex items-center font-semibold'><a>FAQ</a></li>
       </ul>
     </div>
-    <h1 className="text-[#4F39F6] font-extrabold text-4xl">DigiTools</h1>
+    <h1 className="text-[#4F39F6] font-extrabold text-xl md:text-4xl ">DigiTools</h1>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -32,12 +32,12 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end space-x-4 ">
-    <div className="indicator mr-6">
+    <div className="indicator mr-6 hidden md:flex">
   <span className="indicator-item badge rounded-full badge-error text-white">12</span>
-   <CiShoppingCart size={30} className='text-2xl font-semibold'></CiShoppingCart>
+   <CiShoppingCart size={30} className=' text-2xl font-semibold'></CiShoppingCart>
 </div>
   
-    <button className='text-lg font-semibold'>Login</button>
+    <button className='hidden md:flex text-lg font-semibold'>Login</button>
     <button className='btn rounded-full bg-linear-to-bl from-violet-500 to-[#4F39F6] text-lg font-semibold text-white'>Get Started</button>
   </div>
     </div>
