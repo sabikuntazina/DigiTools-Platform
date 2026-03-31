@@ -1,7 +1,7 @@
 import React from 'react';
 import { CiShoppingCart } from 'react-icons/ci';
 
-const Navbar = () => {
+const Navbar = ({carts}) => {
     return (
  <div className=" bg-base-100 shadow-sm ">
     <div className='navbar lg:max-w-7xl lg:mx-auto'>
@@ -33,7 +33,9 @@ const Navbar = () => {
   </div>
   <div className="navbar-end space-x-4 ">
     <div className="indicator mr-6 hidden md:flex">
-  <span className="indicator-item badge rounded-full badge-error text-white">12</span>
+ {
+  carts.length>0 &&  <span className="indicator-item badge rounded-full badge-error text-white">{carts.length}</span>
+ }
    <CiShoppingCart size={30} className=' text-2xl font-semibold'></CiShoppingCart>
 </div>
   

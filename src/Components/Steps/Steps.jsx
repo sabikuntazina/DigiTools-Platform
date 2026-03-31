@@ -27,6 +27,8 @@ const steps = [
 
 const Steps = () => {
     return (
+      <div className='bg-[#F9FAFC] p-10'>
+
     <div className='max-w-7xl mx-auto my-10 '>
          <div className='grid md:grid-cols-3 gap-4 place-items-center'>
           {
@@ -34,6 +36,7 @@ const Steps = () => {
        }
      </div>
     </div>
+      </div>
     );
 };
 
