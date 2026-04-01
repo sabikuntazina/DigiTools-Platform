@@ -11,6 +11,7 @@ import TransprentPricing from "./Components/TransprentPricing/TransprentPricing"
 import WorkFlow from "./Components/WorkFlow/WorkFlow";
 
 import Section from "./Components/Section/Section";
+import { toast } from "react-toastify";
 
 const pricePromise = fetch("/data.json").then((res) => res.json());
 
@@ -18,15 +19,18 @@ function App() {
   const [toggle, setToggle] = useState(true);
   const [carts, setCarts] = useState([]);
   const addCarts = (cart) => {
-    console.log(cart);
+    const isFound= carts.find(item=>item.id==cart.id);
+    if(isFound){
+      toast.error("This item already exist");
+      return
+    }
     setCarts([...carts, cart]);
-    console.log(carts);
+    toast.success("Item added Succesfully")
   };
   const removeCarts=(c)=>{
      const newCart=carts.filter(crd=>crd.name!==c.name);
     setCarts(newCart);
-    // const newPrice= coin+p.price;
-    // setCoin(newPrice);
+   toast.success("Item is removed")
   }
 
   return (
