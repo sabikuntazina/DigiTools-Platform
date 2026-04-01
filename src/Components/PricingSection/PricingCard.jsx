@@ -16,7 +16,7 @@ const PricingCard = ({ price, addCarts,removeCarts }) => {
   return (
     <div>
       <div
-        className={`card w-96 bg-base-100 shadow-sm hover:scale-100 hover:shadow-xl 
+        className={`card w-full md:w-96 bg-base-100 shadow-sm hover:scale-100 hover:shadow-xl 
                 transition duration-300 mt-10 `}
       >
         <div className="card-body">

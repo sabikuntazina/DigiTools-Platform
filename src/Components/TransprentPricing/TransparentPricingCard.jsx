@@ -4,7 +4,7 @@ import TansparentFeatures from "./TansparentFeatures";
 const TransparentPricingCard = ({ price }) => {
   return (
     <div
-      className={`card w-96 bg-base-100 shadow-sm ${price.tag === "Most Popular" && "bg-linear-to-bl from-violet-500 to-[#4F39F6] text-white"} hover:scale-100 hover:shadow-xl 
+      className={`card w-full md:w-96 bg-base-100 shadow-sm ${price.tag === "Most Popular" && "bg-linear-to-bl from-violet-500 to-[#4F39F6] text-white"} hover:scale-100 hover:shadow-xl 
                 transition duration-300 mt-10 `}
     >
       <div className="card-body">

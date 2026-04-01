@@ -9,7 +9,7 @@ const PricingSection = ({pricePromise,addCarts,toggle,removeCarts}) => {
     return (
         <div  className='lg:max-w-7xl lg:mx-auto space-y-5 my-20'>
           
-          <div className='grid md:grid-cols-2 lg:grid-cols-3  place-items-center'>
+          <div className='grid md:grid-cols-2 lg:grid-cols-3 place-items-center'>
              {
             priceData.map(price=> <PricingCard price={price} addCarts={addCarts} toggle={toggle} removeCarts={removeCarts}></PricingCard>)
            }
