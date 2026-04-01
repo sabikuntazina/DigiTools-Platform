@@ -15,7 +15,7 @@ const SelectedCart = ({carts,removeCarts,setCarts}) => {
         <div className='lg:max-w-7xl lg:mx-auto my-20 shadow-2xl p-15 shadow-2xl rounded-2xl'>
              <h1 className='text-3xl font-bold mb-10'>Your Cart</h1>
           {
-            carts.length==0 ? <div className='flex flex-col justify-center items-center gap-4  '>
+            carts.length==0 ? <div className='flex flex-col justify-center items-center gap-4 place-items-center  '>
                 <CiShoppingCart className='text-8xl'></CiShoppingCart>
                 <h2 className='text-2xl text-gray-500 font-bold'>Your Cart is empty</h2>
             </div>
@@ -27,7 +27,7 @@ const SelectedCart = ({carts,removeCarts,setCarts}) => {
             carts.map(cart=><SingleSelectedCard cart={cart} removeCarts={removeCarts}></SingleSelectedCard> )
            }
            </div>
-          <div className='flex justify-between items-center px-8 py-4  mt-2 bg-gray-200/30 rounded-2xl shadow-sm border-none'>
+          <div className='flex justify-between items-center md:px-8 py-4  mt-2 bg-gray-200/30 rounded-2xl shadow-sm border-none'>
              <h2 className='text-xl font-bold'>Total</h2>
            <h2 className='text-xl font-bold'>${total}</h2>
           </div>

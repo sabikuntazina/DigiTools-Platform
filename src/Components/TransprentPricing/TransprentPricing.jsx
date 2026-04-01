@@ -57,7 +57,7 @@ const TransprentPricing = () => {
         <div className='lg:max-w-7xl lg:mx-auto space-y-5 my-20'>
             <h1 className='text-center text-3xl leading-relaxed md:text-5xl font-bold'>Simple, Transparent Pricing</h1>
             <p className='text-center text-xl  md:text-2xl font-semibold text-gray-400'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
-           <div className='grid md:grid-cols-3  place-items-center'>
+           <div className='grid  md:grid-cols-2 lg:grid-cols-3 gap-3 place-items-center'>
              {
                 pricingPlans.map(price=><TransparentPricingCard key={price.id} price={price}></TransparentPricingCard>)
             }
